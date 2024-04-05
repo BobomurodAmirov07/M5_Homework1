@@ -122,14 +122,12 @@ class MyWindow(P.QWidget):
                     self.lst[i].setEnabled(False)
 
         if len(self.lst_X_O) == 9:
-            self.lbl.setText("Game over")
-
-        if len(self.lst_X_O) == 9:
             msg = P.QMessageBox()
             msg.setWindowTitle("=")
             msg.setIcon(P.QMessageBox.Information)
-            msg.setText("Draw")
+            msg.setText("Game over")
             msg.exec_()
+            self.lbl.setText("Game over")
 
     def restart(self):
     
