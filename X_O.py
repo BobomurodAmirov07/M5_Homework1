@@ -75,6 +75,8 @@ class MyWindow(P.QWidget):
         self.setLayout(self.vBox)
 
     def Back(self):
+        self.lst_X_O = list()
+        
         self.btn_s.show()
         self.btn.hide()
         self.back_btn.hide()
@@ -130,6 +132,7 @@ class MyWindow(P.QWidget):
             self.lbl.setText("Game over")
 
     def restart(self):
+        self.lst_X_O = list()
     
         self.lbl.setText("Player X")
 
